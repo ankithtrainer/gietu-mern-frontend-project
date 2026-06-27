@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-// Import API Function
-import { createContact } from '../api/contactApi';
+
 import { useNavigate } from 'react-router-dom';
+import { createContact } from '../service/api-services';
 
 const ContactUs = () => {
     // Step-1
