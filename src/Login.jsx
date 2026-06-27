@@ -18,7 +18,7 @@ function Login() {
     try {
       alert("URL =>"+VITE_AUTH_URL_LOGIN);
       const response = await axios.post(
-    "http://localhost:3000/api/auth/login",
+    VITE_AUTH_URL_LOGIN,
         {
           email,
           password
