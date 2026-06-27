@@ -1,13 +1,11 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import Footer from "./Footer"
-import Header from "./Header"
-import NavBar from "./NavBar"
 import Home from "./menubar/Home"
-import AboutUs from "./menubar/About-Us"
-import Services from "./menubar/Services"
-import Contact from "./menubar/Contact-Us"
 import Register from "./Register";
+import Login from "./Login";
+import AboutUs from "./menubar/About-Us";
+import Services from "./menubar/Services";
+import ContactUs from "./menubar/Contact-Us";
 import ContactList from "./ContactList";
 import ContactDetails from "./ContactDetails";
 import UpdateContact from "./UpdateContact ";
@@ -17,21 +15,21 @@ function App() {
     <div>
         <h1> We are starting our Journey To React !!</h1>
        
-      <Header></Header>
-      <NavBar></NavBar>
-      <BrowserRouter>
+         <BrowserRouter>
          <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Login/>}/>
+            <Route path="/home" element={<Home/>}/>
             <Route path="/about" element={<AboutUs/>}/>
             <Route path="/services" element={<Services/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/contact" element={<ContactUs/>}/>
             <Route path="/contact-list" element={<ContactList/>}/>
             <Route path="/contact-by-id/:id" element={<ContactDetails/>}/>
             <Route path="/update-contact/:id" element={<UpdateContact/>}/>         
             <Route path="/register" element={<Register/>}/>
+             <Route path="/logout" element={<Login/>}/>
          </Routes>             
       </BrowserRouter>
-     <Footer/>
+   
     </div>
   )
 }

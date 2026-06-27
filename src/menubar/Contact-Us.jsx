@@ -16,10 +16,7 @@ const ContactUs = () => {
     
     const handleSubmit =async (e)=>{
       e.preventDefault(); 
-     
-        e.preventDefault();
-
-        // Create Object
+      // Create Object
         const contactData = {
             name: name,
             email: email,

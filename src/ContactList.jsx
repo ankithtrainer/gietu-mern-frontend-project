@@ -19,11 +19,7 @@ const ContactList = () => {
       });
      }, []);
 
-     const viewContact = (id) => {
-        alert('id : '+ id);
-        navigator('/contact-by-id/'+id);
-       
-    };
+  
 
 
     const handleDelete = async (id) => {
@@ -42,7 +38,12 @@ const ContactList = () => {
             contacts.filter(contact => contact._id !== id)
     );   
 };
-
+  // View Contact Details
+   const viewContact = (id) => {
+        alert('id : '+ id);
+        navigator('/contact-by-id/'+id);
+       
+    };
   // Update Contact
   const updateContact = (id) => {
     navigator(`/update-contact/${id}`);
@@ -85,11 +86,12 @@ const ContactList = () => {
                        <td>{contact.phoneno}</td>
                        <td>{contact.city}</td>
                        <td>{contact.address}</td>
-                       <td>
+                        <td>
                         <button className="btn btn-info me-2"onClick={() => viewContact(contact._id)}> View </button>
                         <button className="btn btn-warning me-2" onClick={() => updateContact(contact._id)}> Update</button>
                         <button  className="btn btn-danger" onClick={() => handleDelete(contact._id)}>Delete</button>
-                       </td>
+                       
+                        </td> 
                      
                    </tr>) 
             }

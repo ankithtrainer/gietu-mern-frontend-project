@@ -34,7 +34,7 @@ useEffect(() => {
         const { name, value } = e.target;
 
         setContact({
-            ...contact,
+            ...contact,  // spread operator 
             [name]: value
         });
     };
