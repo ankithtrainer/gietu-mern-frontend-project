@@ -10,6 +10,8 @@ import ContactList from "./ContactList";
 import ContactDetails from "./ContactDetails";
 import UpdateContact from "./UpdateContact ";
 import SignUP from "./Sign-Up";
+import Header from "./Header";
+import NavBar from "./NavBar";
 function App() {
   
   return (
@@ -17,6 +19,8 @@ function App() {
         <h1> We are starting our Journey To React !!</h1>
        
          <BrowserRouter>
+          <Header></Header>
+          <NavBar></NavBar>
          <Routes>
             <Route path="/" element={<Login/>}/>
             <Route path="/home" element={<Home/>}/>
