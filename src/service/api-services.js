@@ -1,10 +1,11 @@
 /*import axios from "axios"; */
-const API_URL= "http://localhost:3000";
-const API_POST_URL=API_URL+"/create";
-const API_GET_ALL_CONTACT_URL=API_URL+"/contact-list";
-const API_GET_BY_ID_URL=API_URL+"/find-by";
-const API_UPDATE_URL=API_URL+"/update-by-id";
-const API_DELETE_URL=API_URL+"/delete-by-id";
+import { VITE_API_URL } from "../config/env";
+console.log(VITE_API_URL);
+const API_POST_URL=VITE_API_URL+"/create";
+const API_GET_ALL_CONTACT_URL=VITE_API_URL+"/contact-list";
+const API_GET_BY_ID_URL=VITE_API_URL+"/find-by";
+const API_UPDATE_URL=VITE_API_URL+"/update-by-id";
+const API_DELETE_URL=VITE_API_URL+"/delete-by-id";
 /*
 export const createContact = (contactData) => axios.post(API_POST_URL,contactData);
 export const getAllContacts = () => axios.get(API_GET_ALL_CONTACT_URL)

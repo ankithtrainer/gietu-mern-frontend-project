@@ -1,7 +1,8 @@
 import axios from "axios";
-
+import { VITE_API_URL } from "../config/env";
+console.log(VITE_API_URL);
 const authApi = axios.create({
-  baseURL: "http://localhost:3000"
+  baseURL: VITE_API_URL
 });
 
 authApi.interceptors.request.use((config) => {

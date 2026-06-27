@@ -3,8 +3,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
+import { VITE_AUTH_URL_REGN } from "./config/env";
+console.log(VITE_AUTH_URL_REGN);
 
-function Register() {
+function SignUP() {
 
   const navigate = useNavigate();
 
@@ -31,7 +33,7 @@ function Register() {
     try {
 
       const response = await axios.post(
-        "http://localhost:3000/api/auth/register",
+        VITE_AUTH_URL_REGN,
         formData
       );
 
@@ -146,4 +148,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default SignUP;

@@ -9,6 +9,7 @@ import ContactUs from "./menubar/Contact-Us";
 import ContactList from "./ContactList";
 import ContactDetails from "./ContactDetails";
 import UpdateContact from "./UpdateContact ";
+import SignUP from "./Sign-Up";
 function App() {
   
   return (
@@ -26,7 +27,8 @@ function App() {
             <Route path="/contact-by-id/:id" element={<ContactDetails/>}/>
             <Route path="/update-contact/:id" element={<UpdateContact/>}/>         
             <Route path="/register" element={<Register/>}/>
-             <Route path="/logout" element={<Login/>}/>
+            <Route path="/logout" element={<Login/>}/>
+            <Route path="/sign-up" element={<SignUP/>}/>
          </Routes>             
       </BrowserRouter>
    

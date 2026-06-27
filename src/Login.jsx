@@ -1,13 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { VITE_AUTH_URL_LOGIN } from "./config/env";
 
+//(VITE_AUTH_URL_LOGIN);
 
 
 function Login() {
-
-
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -17,9 +16,9 @@ function Login() {
     e.preventDefault();
 
     try {
-
+      alert("URL =>"+VITE_AUTH_URL_LOGIN);
       const response = await axios.post(
-        "http://localhost:3000/api/auth/login",
+    "http://localhost:3000/api/auth/login",
         {
           email,
           password
