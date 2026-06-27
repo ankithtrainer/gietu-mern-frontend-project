@@ -1,4 +1,4 @@
-import "./navbar.css";
+
 import gietLogo from './assets/giet-logo.png';
 
 const NavBar = () => {
