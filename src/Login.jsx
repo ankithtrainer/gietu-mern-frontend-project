@@ -110,7 +110,7 @@ function Login() {
                 Don't have an account?
 
                 <Link
-                  to="/register"
+                  to="/sign-up"
                   className="ms-2"
                 >
                   Register
