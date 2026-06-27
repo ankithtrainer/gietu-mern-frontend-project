@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 const Header = () => {
    const navigate = useNavigate();
 
-  const handleLogout = () => {
+  const handlelogout = () => {
     
   localStorage.removeItem("token");
   navigate("/login");
@@ -20,7 +20,7 @@ const Header = () => {
                   to="/logout" 
                   className="ms-2"
                   handleLogout
-                  onClick={handleLogout}
+                  onClick={handlelogout}
                 >
                   Logout
                 </Link> 

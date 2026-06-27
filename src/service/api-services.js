@@ -21,9 +21,11 @@ import authApi from "./authApi";
 
 export const createContact = (contactData) =>
     authApi.post(API_POST_URL, contactData);
-
-export const getAllContacts = () =>
+ console.log('==> '+API_GET_ALL_CONTACT_URL );
+ 
+export const getAllContacts = () =>   
     authApi.get(API_GET_ALL_CONTACT_URL);
+
 
 export const getContactById = (id) =>
     authApi.get(`${API_GET_BY_ID_URL}/${id}`);

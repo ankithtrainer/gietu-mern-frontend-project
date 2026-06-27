@@ -11,7 +11,7 @@ authApi.interceptors.request.use((config) => {
     localStorage.getItem("token");
 
   if(token){
-
+    console.log(' Token :'+`Bearer ${token}`);
     config.headers.Authorization =
       `Bearer ${token}`;
   }

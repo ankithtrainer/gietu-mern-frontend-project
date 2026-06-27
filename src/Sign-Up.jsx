@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { VITE_AUTH_URL_REGN } from "./config/env";
-console.log(VITE_AUTH_URL_REGN);
+console.log(' I am here '+ VITE_AUTH_URL_REGN);
 
 function SignUP() {
 
@@ -128,7 +128,7 @@ function SignUP() {
                 Already have an account?
 
                 <Link
-                  to="/login"
+                  to="/"
                   className="ms-2"
                 >
                   Login

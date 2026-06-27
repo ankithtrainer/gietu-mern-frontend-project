@@ -16,7 +16,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      alert("URL =>"+VITE_AUTH_URL_LOGIN);
+     
       const response = await axios.post(
     VITE_AUTH_URL_LOGIN,
         {
